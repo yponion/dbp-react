@@ -1,8 +1,9 @@
 import {useNavigate} from "react-router-dom";
 
-const CreatePage = () => {
+const CreateProjectPage = () => {
     const navigate = useNavigate();
     const onSubmit = () => {
+        // 구현
         navigate('/');
     }
     return (
@@ -35,4 +36,4 @@ const CreatePage = () => {
     )
 }
 
-export default CreatePage;
+export default CreateProjectPage;

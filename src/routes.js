@@ -1,10 +1,12 @@
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
-import CreatePage from "./Pages/CreatePage";
+import CreateProjectPage from "./Pages/CreateProjectPage";
 import ProjectSummaryPage from "./Pages/ProjectSummaryPage";
 import ProjectTaskPage from "./Pages/ProjectTaskPage";
 import ProjectTimelinePage from "./Pages/ProjectTimelinePage";
 import ProjectManagementPage from "./Pages/ProjectManagementPage";
+import CreateNoticePage from "./Pages/CreateNoticePage";
+import CreateTaskPage from "./Pages/CreateTaskPage";
 
 const routes = [
 
@@ -14,12 +16,20 @@ const routes = [
         auth: true
     },
     {
-        path: '/create',
-        element: <CreatePage/>
-    },
-    {
         path: '/login',
         element: <LoginPage/>
+    },
+    {
+        path: '/create/project',
+        element: <CreateProjectPage/>
+    },
+    {
+        path: '/create/notice',
+        element: <CreateNoticePage/>
+    },
+    {
+        path: '/create/task',
+        element: <CreateTaskPage/>
     },
     {
         path: '/project/summary',

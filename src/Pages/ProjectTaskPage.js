@@ -1,6 +1,19 @@
+import TaskList from "../elements/TaskList";
+import {useNavigate} from "react-router-dom";
+
 const ProjectTaskPage = () =>{
+    const navigate = useNavigate();
     return (
-        <div>작업목록</div>
+        <div>
+            <TaskList/>
+            <div
+                className="project-add"
+                onClick={() => navigate('/create/task')}
+            >
+                +
+            </div>
+        </div>
+
     )
 }
 

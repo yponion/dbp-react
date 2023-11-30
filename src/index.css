@@ -235,7 +235,7 @@ nav {
 }
 
 .create-container button:hover{
-    background-color: #003388;
+    background-color: #113e88;
 }
 
 .summary-container {
@@ -257,3 +257,10 @@ nav {
     color: rgba(33, 37, 41, 0.75);
 }
 
+.btn-cancel{
+    cursor: pointer;
+}
+
+.btn-cancel:hover{
+    background-color: #8b98b0;
+}

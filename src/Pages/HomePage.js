@@ -1,17 +1,14 @@
 import ProjectList from "../elements/ProjectList";
 import {useNavigate} from "react-router-dom";
 
-const HomePage = () =>{
+const HomePage = () => {
     const navigate = useNavigate();
-    const goCreatePage = () =>{
-        navigate('/create');
-    }
-    return(
+    return (
         <div>
             <ProjectList/>
             <div
                 className="project-add"
-                onClick={goCreatePage}
+                onClick={() => navigate('/create/project')}
             >
                 +
             </div>
