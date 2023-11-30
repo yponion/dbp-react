@@ -25,7 +25,8 @@ const ProjectList = () => {
             <div
                 style={{
                     cursor: "default",
-                    backgroundColor: "initial"
+                    backgroundColor: "initial",
+                    fontWeight: "bold"
                 }}
                 className="project-container"
             >
