@@ -11,7 +11,7 @@ const CreateProjectPage = () => {
             <form>
                 <div className="create-container">
                     <div>
-                        <h1>프로젝트 만들기</h1><br/>
+                        <h1>프로젝트 생성</h1><br/>
                         <label>이름</label>
                         <input type="text" placeholder="이름" required/>
                         <br/><br/><br/>

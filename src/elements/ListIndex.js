@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
-const Project = ({isProject, isSummary, isTask, project, summary, task, onClick}) => {
+const ListIndex = ({isProject, isSummary, isTask, project, summary, task, onClick}) => {
 
     return (
         <div
@@ -34,19 +34,18 @@ const Project = ({isProject, isSummary, isTask, project, summary, task, onClick}
     )
 }
 
-Project.propTypes = {
-    project: PropTypes.object,
-    // title: PropTypes.string,
-    // kind: PropTypes.string,
-    // leader: PropTypes.string,
-    // onClick: PropTypes.func,
-};
-Project.defaultProps = {
-    // title: '',
-    // kind: '',
-    // leader: '',
-    // onClick: () => {
-    // },
-};
+ListIndex.propTypes = {
+    isProject: propTypes.bool,
+    isSummary: propTypes.bool,
+    isTask: propTypes.bool,
+    project: propTypes.object,
+    summary: propTypes.object,
+    task: propTypes.object,
+}
+ListIndex.defaultProps = {
+    isProject: false,
+    isSummary: false,
+    isTask: false,
+}
 
-export default Project;
+export default ListIndex;

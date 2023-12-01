@@ -1,7 +1,7 @@
 import {useState} from "react";
 import { useNavigate} from "react-router-dom";
 import ListIndex from "./ListIndex";
-import * as propTypes from "prop-types";
+import propTypes from "prop-types";
 
 const List = ({isProject, isSummary, isTask}) => {
     const navigate = useNavigate();
@@ -93,24 +93,6 @@ const List = ({isProject, isSummary, isTask}) => {
                         />
                         : ""
             }
-            {/*<Project*/}
-            {/*    title="자바"*/}
-            {/*    kind="개인프로젝트"*/}
-            {/*    leader="양정운"*/}
-            {/*    onClick={() => navigate('/project/summary')}*/}
-            {/*/>*/}
-            {/*<Project*/}
-            {/*    title="데이터베이스 프로젝트"*/}
-            {/*    kind="팀플"*/}
-            {/*    leader="이도영"*/}
-            {/*    onClick={() => navigate('/project/summary')}*/}
-            {/*/>*/}
-            {/*<Project*/}
-            {/*    title="프로젝트"*/}
-            {/*    kind="유형"*/}
-            {/*    leader="이재완"*/}
-            {/*    onClick={() => navigate('/project/summary')}*/}
-            {/*/>*/}
 
         </div>
     )

@@ -11,7 +11,6 @@ const ProjectManagementPage = () => {
             <form>
                 <div className="create-container">
                     <div>
-                        <h1>프로젝트명</h1><br/>
                         <label>이름</label>
                         <input type="text" placeholder="이름" required/>
                         <br/><br/><br/>
@@ -23,7 +22,11 @@ const ProjectManagementPage = () => {
                         <br/><br/><br/>
                         <label>마감일</label>
                         <input type="date" placeholder="마감일" required/>
-                        <br/><br/><br/><br/>
+                        <br/><br/><br/>
+
+                        <div>회원명단</div>
+
+                        <br/><br/>
                         <button
                             type="submit"
                             onClick={onSubmit}
